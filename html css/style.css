@@ -1,0 +1,731 @@
+*{box-sizing: border-box;}
+
+/* --------------- SELEZIONE FONT ---------------*/
+/* <link href="https://fonts.googleapis.com/css2?
+family=Anton
+&
+family=Barlow+Condensed:wght@400;600
+&
+family=IBM+Plex+Mono:wght@400
+&
+display=swap" rel="stylesheet"> */
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.font_titolo {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+}
+
+.font_didascalia {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+.navigator a {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+/* --------------- FINE SELEZIONE FONT ---------------*/
+/* --------------- IMPOSTAZIONI BASE ---------------*/
+
+body, html{ margin:0; padding:0}
+main{text-align: center}
+
+body {
+    background-image: url("../img/Homepage/Carta\ millimetrata\ greige\ vintage.png");
+    background-repeat: repeat;
+    background-size: 600px auto;
+}
+
+h1, h2, h3, h4, h5, h6{text-align: center; margin: 0;}
+a{color:rgb(0, 0, 0);display: block; text-decoration: none;}
+
+.body_margin{margin: 0% 10% 0% 10%;}
+
+/* IMPOSTAZIONI LOGHI */
+.logo{display: block; width: 200px; height: auto;}
+.img-res{width: 100%; height: auto; display: block; margin-left: none; margin-right: none;}
+
+/* --------------- FINE IMPOSTAZIONI BASE ---------------*/
+/* --------------- MENU DI NAVIGAZIONE ---------------*/
+
+.nav_menu{ display: flex; justify-content: center; background-color:#fff}
+
+.navigator {
+    display: flex;
+    width: 50%;
+}
+
+.nav_left {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_right {
+    width: 70%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.nav_right ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav_right ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 0px 2px 0px;
+    margin: 0px 10px 0px 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav_right ul li a:hover {
+    border-bottom-color: darkorange;
+}
+
+/* --------------- FINE MENU DI NAVIGAZIONE ---------------*/
+
+/* --------------- HERO IMAGE ---------------*/
+
+.hero{position: relative; display: flex; justify-content: center; border-bottom: 5px solid rgb(138, 131, 131);}
+.hero2{position: absolute; display: flex; justify-content: space-between; width: 100%; top: 0; height: 40%;
+    background: #ababab;
+    background: linear-gradient(180deg, rgba(171, 171, 171, 1) 0%, rgba(199, 199, 199, 0.38) 67%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hero3_left{display: flex; flex-direction: column; width: 60%; padding: 0% 2% 0% 2%;}
+
+/* TRADIZIONE INGEGNERIA etc etc */
+.hero3_right {display: flex; width: 30%; justify-content: right; container-type: inline-size; padding: 0% 2% 0% 2%;}
+.hero3_right h3{font-size: 7cqw; color: #423d3d; text-align: right; padding: 2% 0 0 0;}
+
+/* VETTA 1980 e LINEA */
+.hero4{display: flex; height: 25%;}
+/* VETTA 1980 (left) e LINEA (right) */
+.hero6_left{display: flex; width: 30%; justify-content: left; container-type: inline-size;}
+.hero6_left h2{display: flex; font-size: 9cqw; align-items: center; color: #1a1818b8;}
+.hero6_right{display: flex; width: 70%; justify-content: right; align-items: center;}
+.hero6_right img{height: 25%}
+
+/* FUTURO HA RADICI */
+.hero5{display: flex; width: auto; height: 75% ; container-type: inline-size;}
+.hero5 h1{font-size: 12cqw; margin: 0; align-items: center; line-height: 1.02;}
+.punto_arancione {
+    color: darkorange;
+    }
+
+/* --------------- FINE HERO IMAGE ---------------*/
+/* --------------- BANNER SOTTO HERO IMAGE ---------------*/
+
+.under_hero{display: flex; aspect-ratio: 1024 / 120;}
+.under_hero h3{display: flex; font-size: 20px; color: #423d3daa; text-align: left; line-height: 1.1; align-items: center;}
+.col_60{display: flex; width: 56%;}
+.col_20{display: flex; width: 22%;}
+.col_20_right{display: flex; width: 22%; justify-content: right;}
+
+/* --------------- FINE BANNER SOTTO HERO IMAGE ---------------*/
+/* --------------- BANNER 2 ---------------*/
+
+.title{display: flex; aspect-ratio: 1024 / 200;}
+
+/* 01 */
+.title_left{display: flex; align-items: center; width: 15%; justify-content: center;}
+.title_left h3{font-size: 150px; color:#423d3d6d}
+
+/* CORPO CENTRALE */
+.title_center{display: flex; flex-direction: column; width: 70%;;}
+
+/* LA GAMMA (left) e RIGA GRIGIA TECNICA (right) */
+.title_2{display: flex; height: 20%; width: 100%;;}
+.title_2_left{display: flex; align-items: center; width: 15%;}
+.title_2_left p{font-size: 18px;}
+.title_2_right{display: flex; align-items: center; width: 75%;}
+
+/* TRE MODELLI, TRE STILI */
+.title_3{display: flex; height: 60%; align-items: center;}
+.title_3 h2{display: flex; font-size:60px; color:#020202; text-align: center;}
+
+/* RIGA TECNICA LEFT e RIGA TECNICA RIGHT */
+.title_4{display: flex; height: 20%}
+.title_4_left{display: flex; align-items: center; width: 65%;}
+.title_4_right{display: flex; align-items: center; width: 25%;}
+
+/* HERITAGE NAKED SUPER-SPORT */
+.title_right{display: flex; align-items: center; width: 15%; justify-content: right; align-items: end;}
+.title_right h3{display: flex; font-size:20px; color:#423d3d99; text-align: right; margin: 0 0 5% 0;}
+
+/* --------------- FINE BANNER 2 ---------------*/
+/* --------------- SEZIONE SOTTO LINEUP --------------- */
+
+.paragrafo_lineup {
+    display: flex; justify-content: center;
+    padding: 30px 0;
+}
+
+.paragrafo_lineup p {
+    width: 100%; max-width: 1024px; margin: 0;
+    font-size: 20px; line-height: 1.5;
+    color: #423d3d; text-align: center;
+}
+
+.bottone_gamma {width: 40%; max-width: 420px; margin: 0 auto 60px;}
+
+/* --------------- FASCIA SCURA --------------- */
+
+.footer_presentazione {background-color: #252827; color: #fff; padding: 40px 0;}
+
+.footer_presentazione_inner {display: flex; justify-content: space-between; align-items: center; gap: 30px;}
+
+.footer_presentazione_titolo {width: 40%;}
+
+.footer_presentazione_titolo p {margin: 0 0 15px; font-size: 12px; color: #deded8;}
+
+.footer_presentazione_titolo h2 {margin: 0;
+    font-family: Arial, sans-serif; font-weight: 400; font-size: 32px;
+    line-height: 1.15; text-align: left;
+}
+
+.footer_presentazione_linea {width: 20%;}
+
+.linea_footer {width: 100%; height: 1px; background-color: #969891;}
+
+.footer_presentazione_testo {width: 30%;}
+
+.footer_presentazione_testo p {margin: 0; font-size: 15px; line-height: 1.5;}
+
+/* --------------- NAVIGAZIONE FOOTER --------------- */
+
+footer {background-color: #fff;}
+
+.footer_navigazione {padding: 35px 0;}
+
+.navigator_footer {display: flex; justify-content: space-between; align-items: center; gap: 25px;}
+
+.nav_left_footer {width: 22%;}
+
+.nav_left_footer .logo {width: 100%; max-width: 200px;}
+
+.nav_right_footer {width: 48%;}
+
+.nav_right_footer ul {display: flex; justify-content: center; flex-wrap: wrap; gap: 15px 25px; list-style: none; padding: 0; margin: 0;}
+
+.navigator_footer a {font-family: "Barlow Condensed", sans-serif; font-weight: 400; letter-spacing: 0.04em;}
+
+.nav_right_footer a {font-size: 18px; padding-bottom: 4px; border-bottom: 2px solid transparent;}
+
+.nav_right_footer a:hover {border-bottom-color: darkorange;}
+
+.nav_motto_footer {display: flex; justify-content: flex-end; align-items: center; gap: 12px; width: 25%;}
+
+.nav_flag_footer {width: 65px; flex-shrink: 0;}
+
+.nav_motto_footer p {margin: 0; font-size: 11px; line-height: 1.6; color: #423d3d;}
+
+/* --------------- RIGA FINALE FOOTER --------------- */
+
+.footer_chiusura {display: flex; justify-content: space-between; align-items: center; gap: 25px; padding: 15px 0 30px;}
+
+.footer_copyright {width: 45%;}
+
+.footer_copyright p {margin: 0; font-size: 12px; color: #666;}
+
+.footer_chiusura_linea {width: 20%;}
+
+.footer_claim {width: 30%;}
+
+.footer_claim p {margin: 0; font-size: 11px; color: #423d3d; text-align: right;}
+
+
+
+/* --------------- TESTI DINAMICI DESKTOP --------------- */
+
+@media (min-width: 769px) {
+
+    /* CONTENITORI DI RIFERIMENTO */
+    .navigator,
+    .under_hero,
+    .title,
+    .title_center,
+    .footer_presentazione_inner,
+    .navigator_footer,
+    .footer_chiusura {
+        container-type: inline-size;
+    }
+
+
+    /* MENU SUPERIORE */
+    .nav_right ul li a {font-size: 3.10cqw;}
+
+
+    /* BANNER SOTTO HERO */
+    .under_hero h3 {font-size: 1.75cqw;}
+
+
+    /* NUMERO SEZIONE */
+    .title_left h3 {font-size: 14.50cqw;}
+
+
+    /* LA GAMMA */
+    .title_2_left p {font-size: 2.50cqw;}
+
+
+    /* TITOLO LINEUP */
+    .title_3 h2 {font-size: 8.35cqw;}
+
+
+    /* HERITAGE / NAKED / SUPER-SPORT */
+    .title_right h3 {font-size: 1.25cqw;}
+
+
+    /* PARAGRAFO LINEUP */
+    .paragrafo_lineup p {font-size: 1.95cqw;}
+
+
+    /* FASCIA SCURA */
+    .footer_presentazione_titolo p {font-size: 1.15cqw;}
+
+    .footer_presentazione_titolo h2 {font-size: 3.10cqw;}
+
+    .footer_presentazione_testo p {font-size: 1.45cqw;}
+
+
+    /* MENU FOOTER */
+    .nav_right_footer a {font-size: 1.75cqw;}
+
+
+    /* MOTTO BANDIERINA */
+    .nav_motto_footer p {font-size: 1.00cqw;}
+
+
+    /* COPYRIGHT */
+    .footer_copyright p {font-size: 1.15cqw;}
+
+
+    /* CLAIM FINALE */
+    .footer_claim p {font-size: 1.00cqw;}
+}
+
+
+
+/* --------------- VISUALIZZAZIONE SMARTPHONE --------------- */
+
+@media (max-width: 768px) {
+
+    .body_margin {
+        margin: 0 5%;
+    }
+
+
+    /* --------------- MENU SUPERIORE --------------- */
+
+    .navigator {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 15px;
+        gap: 15px;
+    }
+
+    .nav_left,
+    .nav_right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav_left .logo {
+        width: 180px;
+    }
+
+    .nav_right ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_right ul li a {
+        font-size: 18px;
+        margin: 0;
+        padding-bottom: 4px;
+    }
+
+
+    /* --------------- HERO --------------- */
+
+.hero {
+    display: block;
+    overflow: hidden;
+}
+
+.hero > img {
+    width: 100%;
+    height: 62vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero2 {
+    height: auto;
+    padding: 10px 0 20px;
+    border: none;
+}
+
+.hero3_left {
+    width: 75%;
+    padding: 0 4%;
+    container-type: inline-size;
+}
+
+.hero3_right {
+    width: 25%;
+    padding: 0 4% 0 0;
+    border: none;
+}
+
+.hero3_right h3 {
+    font-size: 10cqw;
+    line-height: 1.4;
+    padding: 0;
+}
+
+.hero4 {
+    height: auto;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.hero6_left {
+    width: auto;
+    flex-shrink: 0;
+    container-type: normal;
+}
+
+.hero6_left h2 {
+    font-size: 4cqw;
+    line-height: 1.3;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.hero6_right {
+    width: auto;
+    flex: 1;
+    min-width: 0;
+}
+
+.hero6_right img {
+    width: 100%;
+    height: 6px;
+    object-fit: fill;
+}
+
+.hero5 {
+    height: auto;
+    border: none;
+}
+
+.hero5 h1 {
+    font-size: 9.5cqw;
+    line-height: 1.02;
+    text-align: left;
+}
+
+.punto_arancione {
+    font-size: inherit;
+}
+
+
+/* --------------- BANNER SOTTO HERO --------------- */
+
+.under_hero {
+    height: auto;
+    aspect-ratio: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 6px;
+    border: none;
+}
+
+.col_20,
+.col_20_right {
+    width: 40%;
+}
+
+.col_60 {
+    width: 15%;
+    align-items: center;
+}
+
+.col_60 img {
+    height: 8px;
+    object-fit: fill;
+}
+
+.under_hero h3 {
+    font-size: 10px;
+    line-height: 1.4;
+    border: none;
+}
+
+
+/* --------------- TITOLO GAMMA --------------- */
+
+.title {
+    height: auto;
+    aspect-ratio: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 8px 0 14px;
+    border: none;
+}
+
+.title_left {
+    width: 14%;
+}
+
+.title_left h3 {
+    font-size: 40px;
+    line-height: 1;
+    border: none;
+}
+
+.title_center {
+    width: 66%;
+    height: auto;
+    padding-left: 6px;
+    min-width: 0;
+    container-type: inline-size;
+    border: none;
+}
+
+.title_2 {
+    height: auto;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    border: none;
+}
+
+.title_2_left {
+    width: 40%;
+}
+
+.title_2_left p {
+    margin: 0;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+.title_2_right {
+    width: 55%;
+}
+
+.title_3 {
+    height: auto;
+}
+
+.title_3 h2 {
+    font-size: 8cqw;
+    line-height: 1.1;
+    text-align: left;
+    white-space: nowrap;
+    border: none;
+}
+
+.title_4 {
+    height: auto;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.title_2_right img,
+.title_4_left img,
+.title_4_right img {
+    height: 8px;
+    object-fit: fill;
+}
+
+.title_right {
+    width: 20%;
+    align-self: center;
+    margin: 0;
+    padding-left: 5px;
+    border: none;
+}
+
+.title_right h3 {
+    margin: 0;
+    font-size: 8px;
+    line-height: 1.4;
+    text-align: right;
+    white-space: nowrap;
+    border: none;
+}
+
+    /* --------------- SOTTO LINEUP --------------- */
+
+    .paragrafo_lineup {
+        padding: 25px 0;
+    }
+
+    .paragrafo_lineup p {
+        width: 100%;
+        max-width: 38ch;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 1.6;
+        text-wrap: balance;
+    }
+
+    .bottone_gamma {
+        width: 85%;
+        max-width: 350px;
+        margin: 0 auto 35px;
+        border: none;
+    }
+
+
+    /* --------------- FASCIA SCURA --------------- */
+
+    .footer_presentazione {
+        padding: 30px 0;
+    }
+
+    .footer_presentazione_inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer_presentazione_titolo,
+    .footer_presentazione_testo {
+        width: 100%;
+    }
+
+    .footer_presentazione_titolo p {
+        font-size: 11px;
+    }
+
+    .footer_presentazione_titolo h2 {
+        font-size: 28px;
+        line-height: 1.15;
+    }
+
+    .footer_presentazione_linea {
+        width: 35%;
+    }
+
+    .footer_presentazione_testo p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
+    /* --------------- NAVIGAZIONE FOOTER --------------- */
+
+    .footer_navigazione {
+    padding: 25px 0 20px;
+    }
+
+    .navigator_footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px 4%;
+    }
+
+    /* LOGO A SINISTRA */
+    .nav_left_footer {
+        width: 42%;
+        order: 1;
+    }
+
+    .nav_left_footer .logo {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    /* BANDIERINA E MOTTO A DESTRA */
+    .nav_motto_footer {
+        width: 54%;
+        order: 2;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .nav_flag_footer {
+        width: 40px;
+    }
+
+    .nav_motto_footer p {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    /* MENU NELLA RIGA SUCCESSIVA */
+    .nav_right_footer {
+        width: 100%;
+        order: 3;
+    }
+
+    .nav_right_footer ul {
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav_right_footer a {
+        font-size: 16px;
+    }
+
+
+    /* --------------- CHIUSURA FOOTER --------------- */
+
+    .footer_chiusura {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4%;
+        padding: 12px 0 20px;
+    }
+
+    .footer_copyright {
+        width: 64%;
+        text-align: left;
+    }
+
+    .footer_copyright p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .footer_claim {
+        width: 32%;
+    }
+
+    .footer_claim p {
+        font-size: 9px;
+        line-height: 1.5;
+        text-align: right;
+    }
+
+    .footer_chiusura_linea {
+        display: none;
+    }
+}

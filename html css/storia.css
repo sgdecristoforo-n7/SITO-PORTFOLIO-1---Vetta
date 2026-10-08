@@ -1,0 +1,421 @@
+/* PAGINA STORIA — caricare questo file DOPO style.css.
+   Header, footer, font e carta millimetrata provengono dalla homepage. */
+
+/* --------------- NAVIGAZIONE --------------- */
+
+.pagina_storia .nav_right a[aria-current="page"],
+.pagina_storia .nav_right_footer a[aria-current="page"] {
+    border-bottom-color: darkorange;
+}
+
+.pagina_storia a:focus-visible {
+    outline: 2px solid #423d3d;
+    outline-offset: 5px;
+}
+
+/* Evita che il menu desktop si comprima alle larghezze intermedie. */
+@media (min-width: 769px) {
+    .pagina_storia .navigator {
+        min-width: 660px;
+        max-width: 90%;
+    }
+}
+
+/* --------------- HERO A TUTTA LARGHEZZA --------------- */
+
+.storia_main {
+    text-align: left;
+}
+
+.storia_hero {
+    position: relative;
+    overflow: hidden;
+    background-color: #deded8;
+}
+
+.storia_hero_immagine {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1983 / 793;
+    object-fit: cover;
+}
+
+.storia_hero_testo {
+    position: absolute;
+    inset: 0;
+    padding-top: 4%;
+    container-type: inline-size;
+}
+
+.storia_hero_didascalia {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 49%;
+    margin-bottom: 18px;
+}
+
+.storia_hero_didascalia p {
+    flex-shrink: 0;
+    margin: 0;
+    color: #423d3d;
+    font-size: clamp(10px, 1.45cqw, 22px);
+    letter-spacing: 0.04em;
+}
+
+.storia_linea {
+    display: block;
+    flex: 1;
+    min-width: 0;
+    height: 1px;
+    background-color: #777973;
+}
+
+.storia_hero h1 {
+    text-align: left;
+    font-size: 8.7cqw;
+    line-height: 1.02;
+    color: #020202;
+}
+
+.storia_punto {
+    color: darkorange;
+}
+
+/* --------------- LUOGO E ANNO --------------- */
+
+.storia_luogo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 0;
+    container-type: inline-size;
+}
+
+.storia_luogo p {
+    margin: 0;
+    font-size: clamp(9px, 1.15cqw, 17px);
+    color: #423d3d;
+    letter-spacing: 0.04em;
+}
+
+/* --------------- TRE CAPITOLI DELLA STORIA --------------- */
+
+.storia_percorso {
+    padding-top: 30px;
+    container-type: inline-size;
+}
+
+.storia_capitolo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4%;
+    margin-bottom: 38px;
+}
+
+.storia_racconto {
+    width: 41%;
+    min-width: 0;
+    container-type: inline-size;
+}
+
+.storia_intestazione {
+    display: flex;
+    align-items: flex-start;
+    gap: 7%;
+    margin-bottom: 20px;
+}
+
+.storia_numero {
+    width: 28%;
+    flex-shrink: 0;
+    font-size: 30cqw;
+    line-height: 1;
+    color: #423d3d40;
+}
+
+.storia_titoli {
+    flex: 1;
+    min-width: 0;
+    padding-top: 8px;
+}
+
+.storia_etichetta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.storia_etichetta p {
+    margin: 0;
+    flex-shrink: 0;
+    font-size: clamp(9px, 3.4cqw, 18px);
+    line-height: 1.45;
+    letter-spacing: 0.02em;
+    color: #423d3d;
+}
+
+.storia_titoli h2 {
+    padding-top: 9px;
+    border-top: 1px solid #969891;
+    font-size: 10.1cqw;
+    line-height: 1.08;
+    text-align: left;
+    color: #020202;
+}
+
+.storia_paragrafo {
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: clamp(12px, 4cqw, 22px);
+    line-height: 1.45;
+    color: #423d3d;
+}
+
+.storia_foto {
+    width: 55%;
+    min-width: 0;
+    margin: 0;
+}
+
+.storia_foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1672 / 941;
+    object-fit: cover;
+}
+
+.storia_foto figcaption {
+    margin-top: 7px;
+    font-size: clamp(8px, 1.1cqw, 16px);
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: #423d3d;
+}
+
+/* Nel secondo capitolo la fotografia è più larga e passa a sinistra. */
+.storia_capitolo_inverso .storia_foto {
+    width: 59%;
+    order: -1;
+}
+
+.storia_capitolo_inverso .storia_racconto {
+    width: 37%;
+}
+
+.storia_capitolo_inverso .storia_titoli h2 {
+    font-size: 11.1cqw;
+}
+
+.storia_capitolo_inverso .storia_paragrafo {
+    font-size: clamp(12px, 4.43cqw, 22px);
+}
+
+/* L'ultima immagine è seguita direttamente dalla gamma. */
+.storia_capitolo:last-of-type {
+    margin-bottom: 12px;
+}
+
+/* --------------- LINEUP E PULSANTE MODELLI --------------- */
+
+.storia_gamma {
+    padding-bottom: 30px;
+}
+
+.bottone_gamma a{margin-top: 10%;}
+
+.storia_bottone {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 32%;
+    max-width: 420px;
+    min-height: 50px;
+    margin: 16px auto 0;
+    padding: 10px 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-size: clamp(18px, 2.2cqw, 30px);
+    letter-spacing: 0.04em;
+    color: #e76f00;
+    text-align: center;
+}
+
+/* Due sagome sovrapposte disegnano il bordo con gli angoli smussati. */
+.storia_bottone::before,
+.storia_bottone::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(0 0, calc(100% - 9px) 0, 100% 9px,
+                       100% 100%, 9px 100%, 0 calc(100% - 9px));
+}
+
+.storia_bottone::before {
+    inset: 0;
+    background-color: darkorange;
+}
+
+.storia_bottone::after {
+    inset: 2px;
+    background-color: #f5f3ec;
+}
+
+.storia_bottone:hover::after {
+    background-color: #fff;
+}
+
+.storia_freccia {
+    display: inline-block;
+    margin-left: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+}
+
+/* --------------- SMARTPHONE --------------- */
+/* Anche su mobile il mockup mantiene testo e foto affiancati. */
+
+@media (max-width: 768px) {
+    .storia_hero_immagine {
+        height: 65vw;
+        aspect-ratio: auto;
+        object-position: center;
+    }
+
+    .storia_hero_testo {
+        padding-top: 5%;
+    }
+
+    .storia_hero_didascalia {
+        width: 58%;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .storia_hero_didascalia p {
+        font-size: 2.05cqw;
+    }
+
+    .storia_hero h1 {
+        font-size: 9.8cqw;
+    }
+
+    .storia_luogo {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .storia_luogo p {
+        font-size: 2cqw;
+    }
+
+    .storia_percorso {
+        padding-top: 18px;
+    }
+
+    .storia_capitolo {
+        gap: 3%;
+        align-items: stretch;
+        margin-bottom: 24px;
+    }
+
+    .storia_racconto {
+        width: 42%;
+    }
+
+    .storia_foto {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .storia_intestazione {
+        gap: 5%;
+        margin-bottom: 12px;
+    }
+
+    .storia_numero {
+        width: 28%;
+        font-size: 30cqw;
+    }
+
+    .storia_titoli {
+        padding-top: 3px;
+    }
+
+    .storia_etichetta {
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .storia_etichetta p {
+        font-size: 3.2cqw;
+        letter-spacing: 0;
+    }
+
+    .storia_titoli h2 {
+        padding-top: 5px;
+        font-size: 10.2cqw;
+    }
+
+    .storia_paragrafo {
+        font-size: clamp(10px, 4cqw, 16px);
+        line-height: 1.45;
+    }
+
+    /* Immagini più verticali per accompagnare l'altezza dei testi. */
+    .storia_foto img {
+        flex: 1;
+        height: 0;
+        min-height: 125px;
+        aspect-ratio: auto;
+        object-position: center;
+    }
+
+    .storia_foto figcaption {
+        margin-top: 5px;
+        font-size: clamp(8px, 1.6cqw, 12px);
+        line-height: 1.5;
+    }
+
+    .storia_capitolo_inverso .storia_foto {
+        width: 59%;
+    }
+
+    .storia_capitolo_inverso .storia_racconto {
+        width: 38%;
+    }
+
+    .storia_capitolo_inverso .storia_titoli h2 {
+        font-size: 11.3cqw;
+    }
+
+    .storia_capitolo_inverso .storia_paragrafo {
+        font-size: clamp(10px, 4.42cqw, 16px);
+    }
+
+    .storia_capitolo:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .storia_gamma {
+        padding-bottom: 25px;
+    }
+
+    .storia_bottone {
+        width: 65%;
+        max-width: 350px;
+        min-height: 42px;
+        margin-top: 12px;
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+}
