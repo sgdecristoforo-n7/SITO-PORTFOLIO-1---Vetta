@@ -60,7 +60,7 @@
     flex-shrink: 0;
     margin: 0;
     color: #423d3d;
-    font-size: clamp(10px, 1.45cqw, 22px);
+    font-size: clamp(12px, 1.74cqw, 26.4px);
     letter-spacing: 0.04em;
 }
 
@@ -95,7 +95,7 @@
 
 .storia_luogo p {
     margin: 0;
-    font-size: clamp(9px, 1.15cqw, 17px);
+    font-size: clamp(10.8px, 1.38cqw, 20.4px);
     color: #423d3d;
     letter-spacing: 0.04em;
 }
@@ -131,7 +131,7 @@
 .storia_numero {
     width: 28%;
     flex-shrink: 0;
-    font-size: 30cqw;
+    font-size: 33cqw;
     line-height: 1;
     color: #423d3d40;
 }
@@ -151,8 +151,9 @@
 
 .storia_etichetta p {
     margin: 0;
-    flex-shrink: 0;
-    font-size: clamp(9px, 3.4cqw, 18px);
+    flex-shrink: 1;
+    min-width: 0;
+    font-size: clamp(10.8px, 4.08cqw, 21.6px);
     line-height: 1.45;
     letter-spacing: 0.02em;
     color: #423d3d;
@@ -161,7 +162,7 @@
 .storia_titoli h2 {
     padding-top: 9px;
     border-top: 1px solid #969891;
-    font-size: 10.1cqw;
+    font-size: 12.12cqw;
     line-height: 1.08;
     text-align: left;
     color: #020202;
@@ -171,7 +172,7 @@
     margin: 0;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
-    font-size: clamp(12px, 4cqw, 22px);
+    font-size: clamp(14.4px, 4.8cqw, 26.4px);
     line-height: 1.45;
     color: #423d3d;
 }
@@ -192,7 +193,7 @@
 
 .storia_foto figcaption {
     margin-top: 7px;
-    font-size: clamp(8px, 1.1cqw, 16px);
+    font-size: clamp(9.6px, 1.32cqw, 19.2px);
     line-height: 1.4;
     letter-spacing: 0.02em;
     color: #423d3d;
@@ -209,16 +210,16 @@
 }
 
 .storia_capitolo_inverso .storia_titoli h2 {
-    font-size: 11.1cqw;
+    font-size: 13.32cqw;
 }
 
 .storia_capitolo_inverso .storia_paragrafo {
-    font-size: clamp(12px, 4.43cqw, 22px);
+    font-size: clamp(14.4px, 5.316cqw, 26.4px);
 }
 
-/* L'ultima immagine è seguita direttamente dalla gamma. */
+/* Spazio fra il terzo capitolo e la lineup. */
 .storia_capitolo:last-of-type {
-    margin-bottom: 12px;
+    margin-bottom: 40px;
 }
 
 /* --------------- LINEUP E PULSANTE MODELLI --------------- */
@@ -243,7 +244,7 @@
     padding: 10px 20px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 600;
-    font-size: clamp(18px, 2.2cqw, 30px);
+    font-size: clamp(21.6px, 2.64cqw, 36px);
     letter-spacing: 0.04em;
     color: #e76f00;
     text-align: center;
@@ -301,7 +302,7 @@
     }
 
     .storia_hero_didascalia p {
-        font-size: 2.05cqw;
+        font-size: clamp(9px, 2.46cqw, 18px);
     }
 
     .storia_hero h1 {
@@ -314,7 +315,7 @@
     }
 
     .storia_luogo p {
-        font-size: 2cqw;
+        font-size: clamp(9px, 2.4cqw, 16px);
     }
 
     .storia_percorso {
@@ -344,7 +345,7 @@
 
     .storia_numero {
         width: 28%;
-        font-size: 30cqw;
+        font-size: 33cqw;
     }
 
     .storia_titoli {
@@ -357,17 +358,17 @@
     }
 
     .storia_etichetta p {
-        font-size: 3.2cqw;
+        font-size: clamp(8px, 3.84cqw, 15px);
         letter-spacing: 0;
     }
 
     .storia_titoli h2 {
         padding-top: 5px;
-        font-size: 10.2cqw;
+        font-size: 12.24cqw;
     }
 
     .storia_paragrafo {
-        font-size: clamp(10px, 4cqw, 16px);
+        font-size: clamp(12px, 4.8cqw, 19.2px);
         line-height: 1.45;
     }
 
@@ -382,7 +383,7 @@
 
     .storia_foto figcaption {
         margin-top: 5px;
-        font-size: clamp(8px, 1.6cqw, 12px);
+        font-size: clamp(9.6px, 1.92cqw, 14.4px);
         line-height: 1.5;
     }
 
@@ -395,15 +396,15 @@
     }
 
     .storia_capitolo_inverso .storia_titoli h2 {
-        font-size: 11.3cqw;
+        font-size: 13.56cqw;
     }
 
     .storia_capitolo_inverso .storia_paragrafo {
-        font-size: clamp(10px, 4.42cqw, 16px);
+        font-size: clamp(12px, 5.304cqw, 19.2px);
     }
 
     .storia_capitolo:last-of-type {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     .storia_gamma {
@@ -416,6 +417,36 @@
         min-height: 42px;
         margin-top: 12px;
         padding: 8px 12px;
-        font-size: 18px;
+        font-size: 21.6px;
     }
+}
+
+/* --------------- TESTI CONDIVISI: SOLO NELLA PAGINA STORIA --------------- */
+/* Le regole sono circoscritte a Storia e non cambiano la homepage. */
+.pagina_storia .bottone_gamma {
+    width: 46%;
+    max-width: 480px;
+}
+
+@media (min-width: 769px) {
+    .pagina_storia .nav_right ul li a { font-size: 3.5cqw; }
+    .pagina_storia .footer_presentazione_titolo p { font-size: 1.38cqw; }
+    .pagina_storia .footer_presentazione_titolo h2 { font-size: 3.72cqw; }
+    .pagina_storia .footer_presentazione_testo p { font-size: 1.74cqw; }
+    .pagina_storia .nav_right_footer a { font-size: 2.1cqw; }
+    .pagina_storia .nav_motto_footer p { font-size: 1.2cqw; }
+    .pagina_storia .footer_copyright p { font-size: 1.38cqw; }
+    .pagina_storia .footer_claim p { font-size: 1.2cqw; }
+}
+
+@media (max-width: 768px) {
+    .pagina_storia .nav_right ul li a { font-size: 20px; }
+    .pagina_storia .footer_presentazione_titolo p { font-size: 13px; }
+    .pagina_storia .footer_presentazione_titolo h2 { font-size: 33px; }
+    .pagina_storia .footer_presentazione_testo p { font-size: 18px; }
+    .pagina_storia .nav_right_footer a { font-size: 18px; }
+    .pagina_storia .nav_motto_footer p { font-size: 11px; }
+    .pagina_storia .footer_copyright p { font-size: 12px; }
+    .pagina_storia .footer_claim p { font-size: 11px; }
+    .pagina_storia .bottone_gamma { width: 90%; max-width: 390px; }
 }
