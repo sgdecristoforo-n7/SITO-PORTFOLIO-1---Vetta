@@ -13,13 +13,7 @@
     outline-offset: 5px;
 }
 
-/* Evita che il menu desktop si comprima alle larghezze intermedie. */
-@media (min-width: 769px) {
-    .pagina_storia .navigator {
-        min-width: 660px;
-        max-width: 90%;
-    }
-}
+
 
 /* --------------- HERO A TUTTA LARGHEZZA --------------- */
 
@@ -429,22 +423,22 @@
 }
 
 @media (min-width: 769px) {
-    .pagina_storia .nav_right ul li a { font-size: 3.5cqw; }
+
     .pagina_storia .footer_presentazione_titolo p { font-size: 1.38cqw; }
     .pagina_storia .footer_presentazione_titolo h2 { font-size: 3.72cqw; }
     .pagina_storia .footer_presentazione_testo p { font-size: 1.74cqw; }
-    .pagina_storia .nav_right_footer a { font-size: 2.1cqw; }
+
     .pagina_storia .nav_motto_footer p { font-size: 1.2cqw; }
     .pagina_storia .footer_copyright p { font-size: 1.38cqw; }
     .pagina_storia .footer_claim p { font-size: 1.2cqw; }
 }
 
 @media (max-width: 768px) {
-    .pagina_storia .nav_right ul li a { font-size: 20px; }
+
     .pagina_storia .footer_presentazione_titolo p { font-size: 13px; }
     .pagina_storia .footer_presentazione_titolo h2 { font-size: 33px; }
     .pagina_storia .footer_presentazione_testo p { font-size: 18px; }
-    .pagina_storia .nav_right_footer a { font-size: 18px; }
+
     .pagina_storia .nav_motto_footer p { font-size: 11px; }
     .pagina_storia .footer_copyright p { font-size: 12px; }
     .pagina_storia .footer_claim p { font-size: 11px; }

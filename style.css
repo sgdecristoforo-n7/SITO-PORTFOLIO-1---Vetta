@@ -729,3 +729,9 @@ footer {background-color: #fff;}
         display: none;
     }
 }
+
+/* Evidenzia la pagina aperta nei menu principale e del footer. */
+.nav_right a[aria-current="page"],
+.nav_right_footer a[aria-current="page"] {
+    border-bottom-color: darkorange;
+}
