@@ -1,0 +1,104 @@
+/* SCHEDE TECNICHE VETTA — file condiviso da v500-sc.html, v650-nk.html,
+   v900-ss.html. Caricare dopo style.css. */
+.pagina_scheda a:focus-visible { outline: 2px solid #423d3d; outline-offset: 5px; }
+/* Il menu evidenzia la sezione Modelli anche nelle pagine dei singoli modelli. */
+.pagina_scheda .nav_right a[aria-current="location"],
+.pagina_scheda .nav_right_footer a[aria-current="location"] { border-bottom-color: darkorange; }
+.scheda_main { text-align: left; color: #423d3d; padding-bottom: clamp(55px, 7vw, 120px); }
+.scheda_main p { margin: 0; }
+.scheda_punto { color: darkorange; }
+.scheda_breadcrumb { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 28px 0; font-size: clamp(11px, 1.1vw, 17px); }
+.scheda_breadcrumb a { color: #423d3d; border-bottom: 1px solid #969891; }
+.scheda_breadcrumb a:hover { border-bottom-color: darkorange; }
+.scheda_intro { display: grid; grid-template-columns: 40% 56%; gap: 4%; align-items: center; padding: 15px 0 clamp(35px, 4vw, 70px); }
+.scheda_presentazione { min-width: 0; container-type: inline-size; }
+.scheda_occhiello { font-size: clamp(11px, 1.2vw, 18px); line-height: 1.5; }
+.scheda_intro h1 { font-size: 23cqw; line-height: 1.15; text-align: left; color: #020202; margin: 15px 0 22px; white-space: nowrap; }
+.scheda_claim { text-align: left; font-size: clamp(26px, 3.4vw, 56px); line-height: 1.08; color: #020202; }
+.scheda_presentazione .scheda_descrizione { margin-top: 22px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(14px, 1.35vw, 21px); line-height: 1.65; }
+.scheda_immagine { margin: 0; min-width: 0; }
+.scheda_immagine img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
+.scheda_link { display: inline-block; padding-bottom: 5px; border-bottom: 2px solid darkorange; font-family: 'Barlow Condensed', sans-serif; font-size: clamp(17px, 1.5vw, 24px); font-weight: 600; letter-spacing: 0.04em; }
+.scheda_link span { margin-left: 8px; font-family: Arial, sans-serif; color: darkorange; }
+.scheda_presentazione > .scheda_link { margin-top: 25px; }
+.scheda_link:hover { color: #b95300; }
+/* Stesso bordo e stesso fondo biancastro semitrasparente di Contatti. */
+.scheda_riquadro { min-width: 0; padding: clamp(22px, 2.7vw, 42px); border: 1px solid #969891; background: rgba(255,255,255,0.28); }
+.scheda_sintesi { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.scheda_dato { padding: clamp(18px, 2vw, 30px); }
+.scheda_dato_valore { color: #020202; font-size: clamp(29px, 3.6vw, 60px); line-height: 1.25; white-space: nowrap; }
+.scheda_dato_valore span { margin-left: 8px; font-family: 'Barlow Condensed', sans-serif; font-size: 0.45em; font-weight: 600; }
+.scheda_dato .font_didascalia { font-size: clamp(9px, 0.9vw, 14px); line-height: 1.6; margin-top: 10px; letter-spacing: 0.04em; }
+.scheda_divisore { position: relative; height: 24px; margin: clamp(40px, 5vw, 85px) 0; color: #777973; }
+.scheda_divisore span { position: absolute; height: 1px; background: currentColor; opacity: 0.65; }
+.scheda_divisore span:nth-child(1) { top: 2px; left: 7%; width: 82%; }
+.scheda_divisore span:nth-child(2) { top: 12px; left: 0; width: 65%; }
+.scheda_divisore span:nth-child(3) { top: 22px; left: 28%; width: 63%; }
+.scheda_divisore span::before, .scheda_divisore span::after { content: ''; position: absolute; top: -4px; width: 1px; height: 9px; background: currentColor; }
+.scheda_divisore span::before { left: 2px; }
+.scheda_divisore span::after { right: 2px; }
+.scheda_tecnica { scroll-margin-top: 25px; }
+.scheda_intestazione { display: flex; align-items: center; gap: 24px; margin-bottom: 30px; }
+.scheda_numero { flex-shrink: 0; color: #423d3d40; font-size: clamp(55px, 7vw, 110px); line-height: 1; }
+.scheda_intestazione .font_didascalia { font-size: clamp(10px, 1.2vw, 18px); line-height: 1.5; margin-bottom: 8px; }
+.scheda_intestazione h2 { text-align: left; color: #020202; font-size: clamp(27px, 3.7vw, 58px); line-height: 1.1; }
+.scheda_griglia { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; align-items: start; }
+.scheda_riquadro h3 { text-align: left; font-size: clamp(23px, 2.2vw, 35px); line-height: 1.25; color: #020202; padding-bottom: 18px; border-bottom: 1px solid #969891; }
+.scheda_dettagli { margin: 8px 0 0; }
+.scheda_dettagli > div { display: grid; grid-template-columns: 40% minmax(0, 1fr); gap: 18px; padding: 15px 0; border-bottom: 1px solid #96989155; }
+.scheda_dettagli > div:last-child { border-bottom: 0; padding-bottom: 0; }
+.scheda_dettagli dt { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(17px, 1.5vw, 23px); font-weight: 600; line-height: 1.4; }
+.scheda_dettagli dd { margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: clamp(12px, 1.1vw, 17px); line-height: 1.65; overflow-wrap: anywhere; }
+.scheda_elenco { margin: 22px 0 0; padding-left: 20px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(13px, 1.2vw, 19px); line-height: 1.65; }
+.scheda_elenco li + li { margin-top: 12px; }
+.scheda_elenco li::marker { color: #b95300; }
+.scheda_riquadro .scheda_carattere { margin-top: 22px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(13px, 1.2vw, 19px); line-height: 1.75; }
+.scheda_main .scheda_nota { margin-top: 32px; max-width: 95ch; font-size: clamp(10px, 1vw, 15px); line-height: 1.7; letter-spacing: 0.02em; }
+.scheda_altri { margin-top: clamp(45px, 6vw, 95px); border-top: 1px solid #969891; padding-top: 30px; }
+.scheda_altri h2 { color: #020202; text-align: left; font-size: clamp(27px, 3vw, 48px); line-height: 1.2; }
+.scheda_altri nav { display: flex; flex-wrap: wrap; gap: 20px 40px; margin-top: 25px; }
+.scheda_contatto { display: table; margin-top: 30px; font-family: 'Barlow Condensed', sans-serif; font-size: clamp(18px, 1.7vw, 27px); border-bottom: 1px solid #969891; padding-bottom: 4px; }
+.scheda_contatto span { color: darkorange; }
+@media (max-width: 1050px) and (min-width: 769px) {
+    .scheda_sintesi { gap: 12px; }
+    .scheda_dato { padding: 16px; }
+    .scheda_dettagli > div { grid-template-columns: 1fr; gap: 7px; }
+}
+@media (max-width: 768px) {
+    .scheda_breadcrumb { font-size: 11px; padding: 22px 0; }
+    .scheda_intro { grid-template-columns: 1fr; gap: 25px; padding: 5px 0 30px; }
+    .scheda_occhiello { font-size: 11px; }
+    .scheda_intro h1 { font-size: 18cqw; margin: 12px 0 18px; }
+    .scheda_claim { font-size: 32px; }
+    .scheda_presentazione .scheda_descrizione { max-width: 48ch; font-size: 14px; margin-top: 18px; }
+    .scheda_presentazione > .scheda_link { margin-top: 20px; }
+    .scheda_sintesi { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .scheda_dato { padding: 18px; }
+    .scheda_dato_valore { font-size: clamp(30px, 8vw, 44px); }
+    .scheda_dato .font_didascalia { font-size: 10px; }
+    .scheda_divisore { margin: 35px 0; }
+    .scheda_intestazione { gap: 15px; margin-bottom: 24px; }
+    .scheda_numero { font-size: 55px; }
+    .scheda_intestazione .font_didascalia { font-size: 10px; }
+    .scheda_intestazione h2 { font-size: 29px; }
+    .scheda_griglia { grid-template-columns: 1fr; gap: 20px; }
+    .scheda_riquadro:not(.scheda_dato) { padding: 22px; }
+    .scheda_riquadro h3 { font-size: 25px; }
+    .scheda_dettagli > div { grid-template-columns: 38% minmax(0, 1fr); gap: 12px; }
+    .scheda_dettagli dt { font-size: 17px; }
+    .scheda_dettagli dd { font-size: 12px; }
+    .scheda_elenco, .scheda_riquadro .scheda_carattere { font-size: 14px; }
+    .scheda_main .scheda_nota { font-size: 10px; }
+    .scheda_altri { margin-top: 40px; }
+    .scheda_altri nav { gap: 20px 25px; }
+    .scheda_link { font-size: 18px; }
+    .scheda_contatto { font-size: 20px; }
+    .scheda_main { padding-bottom: 45px; }
+}
+@media (max-width: 360px) {
+    .scheda_dettagli > div { grid-template-columns: 1fr; gap: 6px; }
+    .scheda_dato { padding: 14px; }
+    .scheda_dato_valore { font-size: 28px; }
+    .scheda_dato_valore span { margin-left: 5px; }
+    .scheda_intestazione h2 { font-size: 25px; }
+}
