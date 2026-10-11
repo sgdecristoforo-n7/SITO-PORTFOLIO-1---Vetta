@@ -17,7 +17,7 @@
 .scheda_claim { text-align: left; font-size: clamp(26px, 3.4vw, 56px); line-height: 1.08; color: #020202; }
 .scheda_presentazione .scheda_descrizione { margin-top: 22px; font-family: 'IBM Plex Mono', monospace; font-size: clamp(14px, 1.35vw, 21px); line-height: 1.65; }
 .scheda_immagine { margin: 0; min-width: 0; }
-.scheda_immagine img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
+.scheda_immagine img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 .scheda_link { display: inline-block; padding-bottom: 5px; border-bottom: 2px solid darkorange; font-family: 'Barlow Condensed', sans-serif; font-size: clamp(17px, 1.5vw, 24px); font-weight: 600; letter-spacing: 0.04em; }
 .scheda_link span { margin-left: 8px; font-family: Arial, sans-serif; color: darkorange; }
 .scheda_presentazione > .scheda_link { margin-top: 25px; }

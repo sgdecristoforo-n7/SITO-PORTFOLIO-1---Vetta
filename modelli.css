@@ -52,8 +52,8 @@
     display: block;
     width: 100%;
     height: auto;
-    aspect-ratio: 3 / 2;
-    object-fit: contain;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 .modelli_info { min-width: 0; }
 .modelli_intestazione {
