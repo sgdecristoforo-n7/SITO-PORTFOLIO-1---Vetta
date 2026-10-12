@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Scheda tecnica VETTA V900-SS: motore, ciclistica, dimensioni e dotazioni.">
+    <title>VETTA — V900-SS</title>
+    <!-- Prima gli stili della homepage, poi le regole delle schede tecniche. -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="schede.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/Logo/favicon.png">
+</head>
+<body class="pagina_scheda">
+    <header>
+            <div class="nav_menu">
+            <nav class="navigator" aria-label="Navigazione principale">
+                <div class="nav_left">
+                    <a href="index.html" class="logo"><img src="img/Logo/Logo VETTA nero su sfondo trasparente.png" alt="logo_vetta" class="img-res"/></a>
+                </div>
+
+                <div class="nav_right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="modelli.html" aria-current="location">MODELLI</a></li>
+                    <li><a href="storia.html">STORIA</a></li>
+                    <li><a href="contatti.html">CONTATTI</a></li>
+                </ul>
+                </div>
+            </nav>
+            </div>
+    </header>
+
+    <main class="scheda_main body_margin">
+        <nav class="scheda_breadcrumb font_didascalia" aria-label="Percorso di navigazione">
+            <a href="modelli.html">MODELLI</a><span aria-hidden="true">/</span><span aria-current="page">V900-SS</span>
+        </nav>
+        <section class="scheda_intro" aria-labelledby="scheda_nome">
+            <div class="scheda_presentazione">
+                <p class="scheda_occhiello font_didascalia">SUPER-SPORT / TRE CILINDRI</p>
+                <h1 id="scheda_nome" class="font_titolo">V900-SS<span class="scheda_punto">.</span></h1>
+                <h2 class="scheda_claim font_titolo">PRECISIONE.<br>IN OGNI CURVA.</h2>
+                <p class="scheda_descrizione">Una sportiva stradale carenata, progettata attorno a precisione e prestazioni. Linee essenziali, senza ali o appendici aerodinamiche esterne.</p>
+                <a class="scheda_link" href="#dati_tecnici">ESPLORA LA SCHEDA <span aria-hidden="true">↓</span></a>
+            </div>
+            <figure class="scheda_immagine">
+                <img src="img/Modelli/V900-SS-officina.png" width="1672" height="941" fetchpriority="high" alt="VETTA V900-SS ferma nell’officina, vista tre quarti destra.">
+            </figure>
+        </section>
+        <div class="scheda_sintesi" aria-label="Dati principali">
+            <div class="scheda_riquadro scheda_dato"><p class="scheda_dato_valore font_titolo">899<span>cm³</span></p><p class="font_didascalia">CILINDRATA</p></div>
+            <div class="scheda_riquadro scheda_dato"><p class="scheda_dato_valore font_titolo">140<span>CV</span></p><p class="font_didascalia">POTENZA MASSIMA</p></div>
+            <div class="scheda_riquadro scheda_dato"><p class="scheda_dato_valore font_titolo">98<span>Nm</span></p><p class="font_didascalia">COPPIA MASSIMA</p></div>
+            <div class="scheda_riquadro scheda_dato"><p class="scheda_dato_valore font_titolo">201<span>kg</span></p><p class="font_didascalia">IN ORDINE DI MARCIA</p></div>
+        </div>
+        <div class="scheda_divisore" aria-hidden="true"><span></span><span></span><span></span></div>
+        <section id="dati_tecnici" class="scheda_tecnica" aria-labelledby="titolo_tecnica">
+            <div class="scheda_intestazione"><span class="scheda_numero font_titolo" aria-hidden="true">01</span><div><p class="font_didascalia">LA MOTO, NEL DETTAGLIO</p><h2 id="titolo_tecnica" class="font_titolo">SCHEDA TECNICA<span class="scheda_punto">.</span></h2></div></div>
+            <div class="scheda_griglia">
+                <section class="scheda_riquadro" aria-labelledby="gruppo_0"><h3 id="gruppo_0" class="font_titolo">Motore e trasmissione</h3><dl class="scheda_dettagli">
+                    <div><dt>Architettura</dt><dd>Tre cilindri in linea trasversale, 4 tempi</dd></div>
+                    <div><dt>Cilindrata</dt><dd>899 cm³</dd></div>
+                    <div><dt>Distribuzione</dt><dd>DOHC, 12 valvole</dd></div>
+                    <div><dt>Raffreddamento</dt><dd>A liquido</dd></div>
+                    <div><dt>Alimentazione</dt><dd>Iniezione ride-by-wire</dd></div>
+                    <div><dt>Potenza massima</dt><dd>140 CV (103 kW) a 12.000 giri/min</dd></div>
+                    <div><dt>Coppia massima</dt><dd>98 Nm a 9.000 giri/min</dd></div>
+                    <div><dt>Cambio</dt><dd>6 marce</dd></div>
+                    <div><dt>Frizione</dt><dd>Antisaltellamento</dd></div>
+                    <div><dt>Quickshifter</dt><dd>Bidirezionale</dd></div>
+                    <div><dt>Trasmissione finale</dt><dd>A catena</dd></div>
+                    <div><dt>Scarico</dt><dd>Doppio terminale compatto sottosella, con schermature termiche per sella e codone</dd></div>
+                </dl></section>
+                <section class="scheda_riquadro" aria-labelledby="gruppo_1"><h3 id="gruppo_1" class="font_titolo">Telaio e sospensioni</h3><dl class="scheda_dettagli">
+                    <div><dt>Telaio</dt><dd>Perimetrale in alluminio</dd></div>
+                    <div><dt>Sospensione anteriore</dt><dd>Forcella rovesciata da 43 mm completamente regolabile</dd></div>
+                    <div><dt>Sospensione posteriore</dt><dd>Monoammortizzatore con leveraggio e regolazioni</dd></div>
+                </dl></section>
+                <section class="scheda_riquadro" aria-labelledby="gruppo_2"><h3 id="gruppo_2" class="font_titolo">Freni, ruote e pneumatici</h3><dl class="scheda_dettagli">
+                    <div><dt>Freno anteriore</dt><dd>Doppio disco da 320 mm, pinze radiali a 4 pistoncini</dd></div>
+                    <div><dt>Freno posteriore</dt><dd>Disco da 220 mm, pinza a 2 pistoncini</dd></div>
+                    <div><dt>ABS</dt><dd>Cornering</dd></div>
+                    <div><dt>Cerchi</dt><dd>In lega da 17″</dd></div>
+                    <div><dt>Pneumatico anteriore</dt><dd>120/70 ZR17</dd></div>
+                    <div><dt>Pneumatico posteriore</dt><dd>190/55 ZR17</dd></div>
+                </dl></section>
+                <section class="scheda_riquadro" aria-labelledby="gruppo_3"><h3 id="gruppo_3" class="font_titolo">Dimensioni e capacità</h3><dl class="scheda_dettagli">
+                    <div><dt>Interasse</dt><dd>1.410 mm</dd></div>
+                    <div><dt>Altezza sella</dt><dd>835 mm</dd></div>
+                    <div><dt>Serbatoio</dt><dd>17 l</dd></div>
+                    <div><dt>Massa in ordine di marcia</dt><dd>201 kg</dd></div>
+                </dl></section>
+            </div>
+        </section>
+        <div class="scheda_divisore" aria-hidden="true"><span></span><span></span><span></span></div>
+        <section class="scheda_dotazioni" aria-labelledby="titolo_dotazioni">
+            <div class="scheda_intestazione"><span class="scheda_numero font_titolo" aria-hidden="true">02</span><div><p class="font_didascalia">TECNOLOGIA E CARATTERE</p><h2 id="titolo_dotazioni" class="font_titolo">AL TUO FIANCO<span class="scheda_punto">.</span></h2></div></div>
+            <div class="scheda_griglia">
+                <div class="scheda_riquadro"><h3 class="font_titolo">Elettronica e dotazioni</h3><ul class="scheda_elenco">
+                    <li>Piattaforma inerziale a 6 assi</li>
+                    <li>Modalità di guida</li>
+                    <li>Controllo di trazione e impennata</li>
+                    <li>ABS cornering</li>
+                    <li>Gestione del freno motore</li>
+                    <li>Quickshifter bidirezionale</li>
+                </ul></div>
+                <div class="scheda_riquadro"><h3 class="font_titolo">Il carattere della moto</h3><p class="scheda_carattere">Il tre cilindri da 899 cm³ eroga 140 CV e 98 Nm. La ciclistica regolabile, la piattaforma inerziale a 6 assi e l’ABS cornering accompagnano una guida precisa, mentre il doppio scarico sottosella completa la linea della carenata.</p></div>
+            </div>
+        </section>
+        <section class="scheda_altri" aria-labelledby="titolo_altri">
+            <h2 id="titolo_altri" class="font_titolo">TRE ANIME. UNA GAMMA<span class="scheda_punto">.</span></h2>
+            <nav aria-label="Altri modelli VETTA">
+                <a class="scheda_link" href="modelli.html">← TUTTI I MODELLI</a>
+                <a class="scheda_link" href="v500-sc.html">V500-SC <span aria-hidden="true">→</span></a>
+                <a class="scheda_link" href="v650-nk.html">V650-NK <span aria-hidden="true">→</span></a>
+            </nav>
+            <a class="scheda_contatto" href="contatti.html">Vuoi saperne di più? Parliamo di moto <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <!-- Footer condiviso con la homepage. -->
+<footer>
+
+            <!-- FASCIA SCURA: PRESENTAZIONE DEL MARCHIO -->
+            <div class="footer_presentazione">
+                <div class="footer_presentazione_inner body_margin">
+
+                    <div class="footer_presentazione_titolo">
+                        <p class="font_didascalia">VETTA / DAL 1980</p>
+
+                        <h2>
+                            Più di una moto,<br>
+                            una storia italiana.
+                        </h2>
+                    </div>
+
+                    <div class="footer_presentazione_linea">
+                        <div class="linea_footer"></div>
+                    </div>
+
+                    <div class="footer_presentazione_testo">
+                        <p>
+                            Dal 1980 costruiamo moto che uniscono persone,
+                            territori e generazioni. Tradizione
+                            ingegneristica italiana, con lo sguardo
+                            sempre al futuro.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- LOGO, MENU E BANDIERINA -->
+            <div class="footer_navigazione">
+                <nav class="navigator_footer body_margin"
+                     aria-label="Navigazione footer">
+
+                    <div class="nav_left_footer">
+                        <a href="index.html" class="logo">
+                            <img
+                                src="img/Logo/Logo VETTA nero su sfondo trasparente.png"
+                                alt="VETTA Competizioni - Home"
+                                class="img-res"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="nav_right_footer">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="modelli.html" aria-current="location">MODELLI</a></li>
+                            <li><a href="storia.html">STORIA</a></li>
+                            <li><a href="contatti.html">CONTATTI</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav_motto_footer">
+
+                        <div class="nav_flag_footer">
+                            <img
+                                src="img/Homepage/VETTA-bandierina-scacchi-trasparente.png"
+                                alt=""
+                                class="img-res"
+                            />
+                        </div>
+
+                        <p class="font_didascalia">
+                            DAL 1980<br>
+                            SEMPRE AVANTI
+                        </p>
+
+                    </div>
+
+                </nav>
+            </div>
+
+            <!-- RIGA FINALE -->
+            <div class="footer_chiusura body_margin">
+
+                <div class="footer_copyright">
+                    <p>
+                        © 2026 VETTA Competizioni. Tutti i diritti riservati.
+                    </p>
+                </div>
+
+                <div class="footer_chiusura_linea">
+                    <div class="linea_footer"></div>
+                </div>
+
+                <div class="footer_claim">
+                    <p class="font_didascalia">
+                        PASSIONE IN MOVIMENTO.
+                    </p>
+                </div>
+
+            </div>
+
+        </footer>
+</body>
+</html>

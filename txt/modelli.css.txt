@@ -1,0 +1,148 @@
+/* PAGINA MODELLI — caricare dopo style.css.
+   Font, carta millimetrata, navigazione e footer provengono dalla homepage. */
+
+.pagina_modelli a:focus-visible {
+    outline: 2px solid #423d3d;
+    outline-offset: 5px;
+}
+
+.modelli_main { text-align: left; }
+
+/* --------------- HERO A TUTTA LARGHEZZA --------------- */
+.modelli_hero {
+    position: relative;
+    overflow: hidden;
+    background: #dce3e8;
+}
+.modelli_hero_immagine {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Mostrare l'intera foto preserva le tre moto e lo spazio per il titolo. */
+}
+.modelli_hero_testo {
+    position: absolute;
+    inset: 0;
+    padding-top: 2.5%;
+    container-type: inline-size;
+}
+.modelli_hero h1 {
+    font-size: 8.7cqw;
+    line-height: 1.02;
+    text-align: left;
+    color: #020202;
+}
+.modelli_punto { color: darkorange; }
+
+/* --------------- CATALOGO E SPAZIATURA --------------- */
+.modelli_catalogo {
+    /* Regolare qui il margine sotto la hero e quello prima del footer. */
+    padding-top: clamp(45px, 6vw, 110px);
+    padding-bottom: clamp(55px, 7vw, 130px);
+}
+.modelli_sezione {
+    display: grid;
+    grid-template-columns: 48% 46%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6%;
+}
+.modelli_foto { min-width: 0; margin: 0; }
+.modelli_foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.modelli_info { min-width: 0; }
+.modelli_intestazione {
+    display: flex;
+    align-items: center;
+    gap: clamp(15px, 2vw, 40px);
+}
+.modelli_numero {
+    flex-shrink: 0;
+    color: #423d3d40;
+    font-size: clamp(55px, 8.8vw, 160px);
+    line-height: 1;
+}
+.modelli_intestazione h2 {
+    font-size: clamp(30px, 4.5vw, 82px);
+    line-height: 1.1;
+    text-align: left;
+    white-space: nowrap;
+}
+.modelli_link {
+    display: table;
+    margin: clamp(22px, 3vw, 50px) auto 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid darkorange;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-size: clamp(18px, 2vw, 32px);
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+}
+.modelli_link span {
+    display: inline-block;
+    margin-left: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: darkorange;
+    transition: transform 160ms ease;
+}
+.modelli_link:hover span { transform: translateX(4px); }
+
+/* --------------- SEPARATORI DA DISEGNO TECNICO --------------- */
+.modelli_divisore {
+    position: relative;
+    height: 24px;
+    /* Spazio tra una moto e la successiva, su entrambi i lati delle linee. */
+    margin: clamp(35px, 4.5vw, 80px) 0;
+    color: #777973;
+}
+.modelli_divisore span {
+    position: absolute;
+    display: block;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.65;
+}
+.modelli_divisore span:nth-child(1) { top: 2px; left: 7%; width: 82%; }
+.modelli_divisore span:nth-child(2) { top: 12px; left: 0; width: 65%; }
+.modelli_divisore span:nth-child(3) { top: 22px; left: 28%; width: 63%; }
+.modelli_divisore span::before,
+.modelli_divisore span::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    width: 1px;
+    height: 9px;
+    background: currentColor;
+}
+.modelli_divisore span::before { left: 2px; }
+.modelli_divisore span::after { right: 2px; }
+
+/* --------------- SMARTPHONE --------------- */
+@media (max-width: 768px) {
+    .modelli_hero_testo { padding-top: 3%; }
+    .modelli_hero h1 { font-size: 8.7cqw; }
+    .modelli_catalogo { padding-top: 35px; padding-bottom: 45px; }
+    .modelli_sezione { grid-template-columns: 48% 48%; gap: 4%; }
+    .modelli_intestazione { gap: 8px; }
+    .modelli_numero { font-size: clamp(32px, 8vw, 60px); }
+    .modelli_intestazione h2 { font-size: clamp(19px, 4.6vw, 35px); }
+    .modelli_link { margin-top: 18px; font-size: 16px; letter-spacing: 0.02em; }
+    .modelli_link span { margin-left: 6px; }
+    .modelli_divisore { margin: 30px 0; height: 18px; }
+    .modelli_divisore span:nth-child(2) { top: 9px; }
+    .modelli_divisore span:nth-child(3) { top: 16px; }
+}
+@media (max-width: 360px) {
+    .modelli_intestazione { flex-wrap: wrap; gap: 5px 8px; }
+    .modelli_link { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .modelli_link span { transition: none; }
+}
